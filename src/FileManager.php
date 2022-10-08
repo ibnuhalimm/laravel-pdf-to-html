@@ -6,7 +6,7 @@ class FileManager {
     public function createDirectory(string $path)
     {
         if (!file_exists($path)) {
-            mkdir($path);
+            mkdir($path, 0777, true);
         }
     }
 
