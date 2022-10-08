@@ -59,8 +59,43 @@ PDF_TO_HTML_INLINE_IMAGES=true
 
 ## Usage
 
+Set the file and get result
 ```php
-// Usage description here
+use Ibnuhalimm\LaravelPdfToHtml\Facades\PdfToHtml;
+
+$sourceFile = '/path/to/your-file.pdf';
+PdfToHtml::setFile($sourceFile)->result();
+
+// It will return output file path
+// e.g. : /var/www/html/storage/app/pdf-to-html/your-file.html
+```
+
+Save as the result file
+```php
+use Ibnuhalimm\LaravelPdfToHtml\Facades\PdfToHtml;
+
+$sourceFile = '/path/to/your-file.pdf';
+PdfToHtml::setFile($sourceFile)
+    ->saveAs('result-file')
+    ->result();
+
+// It will return output file path as
+// e.g. : /var/www/html/storage/app/pdf-to-html/result-file.html
+```
+
+We can set config on-the-fly
+```php
+
+use Ibnuhalimm\LaravelPdfToHtml\Facades\PdfToHtml;
+
+$sourceFile = '/path/to/your-file.pdf';
+PdfToHtml::setFile($sourceFile)
+    ->setConfig([
+        'bin_path' => '/usr/local/bin/pdftohtml',
+        'output_dir' => public_path('/new-location'),
+        'inline_images' => false
+    ])
+    ->result();
 ```
 
 ## Testing
