@@ -10,10 +10,14 @@ class Options {
     const SAVE_AS_SINGLE_FILE = '-s';
     const DATA_URLS = '-dataurls';
 
+    /**
+     * @var ConfigRepository|array
+     */
     protected $config;
 
     /**
-     * @param  $config  array|ConfigRepository
+     * @param  $config  ConfigRepository|array
+     * @return void
      */
     public function __construct($config)
     {
@@ -33,8 +37,7 @@ class Options {
     {
         return [
           self::COMPLEX_DOCUMENT,
-          self::NO_FRAMES,
-          self::SAVE_AS_SINGLE_FILE
+          self::NO_FRAMES
         ];
     }
 
