@@ -10,3 +10,6 @@ All notable changes to `laravel-pdf-to-html` will be documented in this file
 
 ## 1.0.2 - 2022-10-09
 - Fix class name generation for multi page pdf
+
+## 1.0.3 - 2022-10-11
+- Allow '-' character to be part of output filename

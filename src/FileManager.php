@@ -17,6 +17,6 @@ class FileManager {
 
     public function isFilenameAllowed(string $filename)
     {
-        return preg_match('/^[a-zA-Z0-9_]+$/i', $filename);
+        return preg_match('/^[a-zA-Z0-9-_]+$/', $filename);
     }
 }
