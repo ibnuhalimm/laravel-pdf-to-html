@@ -17,5 +17,5 @@ return [
      * - true   : <img src="src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgA..." ...>
      * - false  : <img src="src="./document-image-1.png" ...>
      */
-    'inline_images' => env('PDF_TO_HTML_INLINE_IMAGES', true),
+    'inline_images' => env('PDF_TO_HTML_INLINE_IMAGES', false),
 ];

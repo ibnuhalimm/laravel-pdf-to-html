@@ -7,7 +7,6 @@ use Illuminate\Config\Repository as ConfigRepository;
 class Options {
     const COMPLEX_DOCUMENT = '-c';
     const NO_FRAMES = '-noframes';
-    const SAVE_AS_SINGLE_FILE = '-s';
     const DATA_URLS = '-dataurls';
 
     /**
