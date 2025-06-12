@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-pdf-to-html` will be documented in this file
 
+## 1.2.1 - 2025-06-12
+- Add support Laravel 11 and 12
+- set default `PDF_TO_HTML_INLINE_IMAGES` to false, because new version of pdftohtml doesn't support `-dataurls`
+
 ## 1.1.0 - 2024-02-02
 - Now supports Laravel 10.x
 
